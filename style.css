@@ -1,0 +1,26 @@
+body {
+    margin: 10px;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 500px;
+}
+  
+.grid-item {
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.hover-item {
+    background-color: blue;;
+}
