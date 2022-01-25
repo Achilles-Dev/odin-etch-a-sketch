@@ -12,7 +12,7 @@ body {
     grid-gap: 10px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    width: 500px;
+    border: 1px solid black
 }
   
 .grid-item {
@@ -22,5 +22,5 @@ body {
 }
 
 .hover-item {
-    background-color: blue;;
+    background-color: black;;
 }

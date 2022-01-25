@@ -28,13 +28,11 @@ function resetGrid(){
     removeChildNodes(container);
     let gridRow = prompt("Enter a number less than 100:");
     parseInt(gridRow);
-    if ( gridRow < 1 || gridRow > 100 ){
+    while ( gridRow < 1 || gridRow > 100 ){
         alert('Enter a number between 0 and 100')
         gridRow = prompt("Enter a row number less than 100:");
-        parseInt(gridRow);       
-    } else {
-        makeSquareGrid(gridRow, gridRow)
     }
+    makeSquareGrid(gridRow, gridRow)
     
 }
 
